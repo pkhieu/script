@@ -1,6 +1,7 @@
 # .bashrc
-# Source global definitions
+# Run screenFetch
 if [ -f /usr/bin/screenfetch ]; then screenfetch; fi
+# Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
