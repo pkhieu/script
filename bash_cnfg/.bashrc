@@ -43,7 +43,7 @@ alias chmod='chmod --preserve-root'
 alias chgrp='chgrp --preserve-root'
 alias root='sudo -i'
 alias listen="lsof -P -i -n" 
-alias ps? = "ps aux | grep"
+alias ps?="ps aux | grep"
 
 ########################################################
 # Function
