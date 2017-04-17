@@ -1,5 +1,5 @@
 # .bashrc
-# Run screenFetch
+# Run screenFetch (https://github.com/KittyKatt/screenFetch)
 if [ -f /usr/bin/screenfetch ]; then screenfetch; fi
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -44,7 +44,7 @@ alias chgrp='chgrp --preserve-root'
 alias root='sudo -i'
 alias listen="lsof -P -i -n" 
 alias ps?="ps aux | grep"
-
+alias ip?="ip addr | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'"
 ########################################################
 # Function
 ########################################################
