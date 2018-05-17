@@ -17,6 +17,9 @@ alias c='clear'
 alias ls='ls --color=auto'
 alias ll='ls -la'
 alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egreps='egrep --color=auto -v "^$|^#"'
 alias mkdir='mkdir -pv'
 alias h="history | grep --color=auto"
 alias j='jobs -l'
@@ -45,6 +48,8 @@ alias root='sudo -i'
 alias listen="lsof -P -i -n" 
 alias ps?="ps aux | grep"
 alias ip?="ip addr | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'"
+alias mount='mount |column -t'
+alias fastping='ping -c 100 -s.2'
 ########################################################
 # Function
 ########################################################
