@@ -20,7 +20,7 @@ alias grep='grep --color=auto'
 alias mkdir='mkdir -pv'
 alias h="history | grep --color=auto"
 alias j='jobs -l'
-alias now='date +"&T"'
+alias now='date +"%T"'
 alias nowtime=now
 alias nowdate='date +"%d-%m-%Y"'
 alias port='netstat -tulap'
