@@ -126,6 +126,7 @@ alias root='sudo -i'
 #alias listen='lsof -P -i -n'
 alias pss='ps aux | grep'
 #alias ips="ip addr | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'"
+alias mount='mount |column -t'
 ########################################################
 # Function
 ########################################################
