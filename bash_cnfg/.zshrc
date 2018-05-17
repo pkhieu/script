@@ -104,9 +104,14 @@ alias j='jobs -l'
 alias now='date +"%T"'
 alias nowtime=now
 alias nowdate='date +"%d-%m-%Y"'
+#Network
 alias port='netstat -tulap'
 alias tcpdump='tcpdump -i eth0'
 #alias vnstat='vnstat -i eth0'
+#alias dnstop='dnstop -l 5  eth0'
+#alias iftop='iftop -i eth0'
+#alias ethtool='ethtool eth0'
+
 alias meminfo='free -m -l -t'
 alias psmem='ps auxf | sort -nr -k 4'
 alias psmem10='ps auxf | sort -nr -k 3 | head -10'
@@ -127,6 +132,21 @@ alias root='sudo -i'
 alias pss='ps aux | grep'
 #alias ips="ip addr | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'"
 alias mount='mount |column -t'
+
+# get web server headers #
+alias header='curl -I'
+ 
+# find out if remote server supports gzip / mod_deflate or not #
+alias headerc='curl -I --compress'
+
+#continue download
+alias wget='wget -c'
+
+# reboot / halt / poweroff
+alias reboot='/sbin/reboot'
+alias poweroff='/sbin/poweroff'
+alias halt='/sbin/halt'
+alias shutdown='/sbin/shutdown'
 ########################################################
 # Function
 ########################################################
